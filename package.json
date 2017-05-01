@@ -1,0 +1,40 @@
+{
+  "name": "Sort3DVisualization",
+  "version": "1.0.0",
+  "keywords": [
+    "Sort",
+    "3D",
+    "Visualization",
+    "client",
+    "browser"
+  ],
+  "author": "Shen-Teng Tu",
+  "scripts": {
+    "sort-test": "node sort-test.js",
+    "template": "node all.template.js",
+    "less": "lessc-each src/less docs/css",
+    "webpack": "webpack -p --config webpack.config.js",
+    "webpack-test": "webpack --config webpack.test.js"
+  },
+  "contributors": [],
+  "dependencies": {
+    "three": "^0.85.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.2.2",
+    "webpack": "^2.3.0",
+    "js-beautify": "^1.6.12"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  }
+}

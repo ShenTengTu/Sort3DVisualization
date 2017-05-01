@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="sort,algorithm,visual,visualization,3D,排序,演算法,視覺化,可視化">
+    <meta namge="description" content="Sort algorithm 3D Visualization powered by three.js" />
+    <title>Sort 3D Visualization</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/dcf0aa2bb9.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="body-layout container-fluid">
+        <div class="page-header row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <span class="navbar-brand"><strong>Sort 3D Visualization</strong></span>
+                        <span class="navbar-text pull-right">
+                                <a href="https://github.com/ShenTengTu/Sort3DVisualization" class="navbar-link">
+                                    <i class="fa fa-github fa-lg"></i>
+                                </a>
+                            </span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="panel panel-default center-block" style="width:70%;min-width: 600px;">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="sorts" class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Sort algorithms <i class="fa fa-caret-down fa-lg"></i></span>
+                                </button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a>Exchange Sort</a></li>
+                                <li><a>Selection Sort</a></li>
+                                <li class="disabled"><a>Insertion Sort</a></li>
+                                <li class="disabled"><a>Merge Sort</a></li>
+                                <li class="disabled"><a>Quick Sort</a></li>
+                                <li class="disabled"><a>Bubble Sort</a></li>
+                                <li class="disabled"><a>Cocktail Sort</a></li>
+                                <li class="disabled"><a>Shell Sort</a></li>
+                                <li class="disabled"><a>Heap Sort</a></li>
+                                <li class="disabled"><a>Counting Sort</a></li>
+                                <li class="disabled"><a>Radix Sort</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <span>
+                        This project implements work flow of sort 3D visualization based on Promise, you can see basic sorting structure of source code at bottom.
+                    </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="viewer" src="./sort/sort-exchange.html"></iframe>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div id="jsffdle-container" class="embed-responsive embed-responsive-16by9">
+                        <script async src="//jsfiddle.net/ShenTengTu/hxk8q47a/embed/"></script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

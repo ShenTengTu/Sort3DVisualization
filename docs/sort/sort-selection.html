@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selection Sort ─ Sort 3D Visualization</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="sort,algorithm,visual,visualization,3D,排序,演算法,視覺化,可視化">
+    <meta namge="description" content="Sort algorithm 3D Visualization powered by three.js" />
+    <link rel="stylesheet" type="text/css" href="../css/sorts.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>
+</head>
+
+<body>
+    <div class="foot-bar">
+        <label>Selection Sort</label>
+        <button id="run">run</button>
+        <button id="reset">reset</button>
+        <label tabindex="0" class="switch">
+                <div class="switch-text"></div>
+                <input id="speed" type="checkbox">
+                <div class="switch-slider"></div>
+            </label>
+        <label>X speed</label>
+        <span>powered by <a href="https://threejs.org/" target="_blank">three.js</a></span>
+    </div>
+    <script src="../js/sort-selection.js"></script>
+</body>
+
+</html>
