@@ -45,7 +45,7 @@ var html = template `<!DOCTYPE html>
 var outPath = path.resolve(__rootPath, "docs/sort");
 var i = 1;
 map.forEach((value, key) => {
-    if (i < 3) {
+    if (i < 4) {
         dict.sortName = value.name;
         dict.title = value.name + " ─ Sort 3D Visualization";
         dict.scriptName = key;

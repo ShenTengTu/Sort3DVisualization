@@ -8,6 +8,16 @@ function delay(ms) {
     });
 }
 
-module.exports = {delay:delay};
+/*
+ * @description is function or not
+ */
+function isFunction(functionToCheck) {
+ var getType = {};
+ return functionToCheck && getType.toString.call(functionToCheck) === "[object Function]";
+}
+module.exports = {
+    delay:delay,
+    isFn:isFunction
+};
 
 

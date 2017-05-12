@@ -23,7 +23,7 @@ function menuItemsGen() {
         if(i === 1){
             result = `${result}<li class="active"><a>${value.name}</a></li>\n`;
         }else{
-            if(i < 3){
+            if(i < 4){
                 result = `${result}<li><a>${value.name}</a></li>\n`;
             }else{
                 result = `${result}<li class="disabled"><a>${value.name}</a></li>\n`;
