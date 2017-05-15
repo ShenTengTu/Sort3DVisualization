@@ -11,7 +11,7 @@ var map_it = map.entries();
 var next = map_it.next();
 var i = 1;
 while (!next.done) {
-    if(i<4){
+    if(i<5){
        let key = next.value[0];
        entry[key] = `./${key}.js`;
     }

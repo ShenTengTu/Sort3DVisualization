@@ -167,6 +167,7 @@ var delay = require("./util.js").delay;
             let cube = createCube({w: baseN, h: e, d: baseN});
             Obj3DTranslate(cube, {x: (i + 1) * baseN, y: e / 2});
             cube.userData = {h: e};
+            cube.receiveShadow = true;
             cube.castShadow = true;
             cubeGroup.add(cube);
         });
@@ -490,7 +491,7 @@ var delay = require("./util.js").delay;
                     return acc.concat(v);
                 }, []);
 
-                let timeDelta = [0, 0.15 / speed, 0.4 / speed, 0.15 / speed];
+                let timeDelta = [0, 0.15 / speed, 0.3 / speed, 0.15 / speed];
 
                 let times = timeDelta.map(function (e, i, arr) {
                     if (i > 0) {

@@ -7,7 +7,7 @@ This project site implements sort algorithm 3D visualization powered by [three.j
 - Exchange Sort :white_check_mark: done
 - Selection Sort :white_check_mark: done
 - Insertion Sort :white_check_mark: done
-- Merge Sort :computer: working
+- Merge Sort :white_check_mark: done
 - Quick Sort :computer: working
 - Bubble Sort :computer: working
 - Cocktail Sort :computer: working

@@ -148,6 +148,7 @@ var isFunction = require("./util.js").isFn;
             let cube = createCube({w: baseN, h: e, d: baseN});
             Obj3DTranslate(cube, {x: (i + 1) * baseN, y: e / 2});
             cube.userData = {h: e};
+            cube.receiveShadow = true;
             cube.castShadow = true;
             cubeGroup.add(cube);
         });
